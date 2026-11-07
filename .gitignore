@@ -1,0 +1,41 @@
+# ---------------- 构建产物 ----------------
+dist/
+obj/
+bin/
+*.exe
+*.pdb
+*.obj
+*.rsp
+
+# ---------------- 运行期数据（含 API Key / 本地路径 / 账本） ----------------
+config.ini
+processed_state.json
+crash.log
+logs/
+*.log
+
+# ---------------- 调试与临时素材 ----------------
+.screenshots/
+*.tmp
+*.bak
+*.orig
+~$*
+
+# ---------------- Visual Studio / Rider / VS Code ----------------
+.vs/
+.idea/
+*.user
+*.suo
+*.cache
+*.DotSettings.user
+.vscode/
+
+# ---------------- 本地基线（不公开） ----------------
+# context.md 记录本机绝对路径、调研与内部决策过程，仅作本地维护基线，
+# 不随公开仓库发布；保留在本地，由 .gitignore 阻止 git add . 误带。
+/context.md
+
+# ---------------- 操作系统垃圾 ----------------
+Thumbs.db
+desktop.ini
+.DS_Store
